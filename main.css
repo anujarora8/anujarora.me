@@ -1,7 +1,7 @@
 body {
 	margin: 0 0;
 	text-align: center;
-	color: black;
+	color: #fff;
 
 	background-image: url("anujarora.me/swag.jpg");
 	background-size: cover;
@@ -12,12 +12,7 @@ body {
 }
 h1 {
 	font-size: 45pt;
-	font-color: black;
 	margin-top: 27vh;
-}
-h2 {
-	font-size: 20pt;
-	font-color: black;
 }
 #qhacks {
 	margin-top: 8vh;
@@ -30,11 +25,8 @@ h2 {
 	margin-top: 3vh;
 }
 	h1 {
-	font-color: black;
+	margin-top: 19vh;
 }
-	h2 {
-	font-color: black;	
-	}
 		#social {
 			margin-top: 18vh;
 			margin-bottom: 3em;
