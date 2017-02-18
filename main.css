@@ -1,0 +1,29 @@
+body {
+	margin: 0 0;
+	text-align: center;
+	color: #fff;
+
+	font-family: 'Raleway', sans-serif;
+}
+h1 {
+	font-size: 45pt;
+	margin-top: 27vh;
+}
+#iqlogo {
+	margin-top: 8vh;
+}
+#social {
+	margin-top: 23vh;
+}
+@media (max-width: 600px) {
+	#iqlogo {
+	margin-top: 3vh;
+}
+	h1 {
+	margin-top: 19vh;
+}
+		#social {
+			margin-top: 18vh;
+			margin-bottom: 3em;
+		}
+	}
