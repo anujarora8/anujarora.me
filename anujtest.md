@@ -44,7 +44,7 @@ adaEmbed.setMetaFields({
 
 ## Using the Authentication Token to unlock APIs
 
-<img width="150" alt="API Block Example" src="httprequest1.png">
+<img width="400" alt="API Block Example" src="httprequest1.png">
 
 Once this HTTP Request block is set up (as seen above) and is triggered in an Answer Flow, this authentication token is passed to the API. It is assumed that the token authenticates the calls to the API, **therefore, the token verification should happen in the backend on every call,**  thus allowing the API to authenticate the user, and continue to execute the request.
 
