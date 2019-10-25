@@ -65,5 +65,18 @@ For security purposes, we recommend setting an expiration on the session ID that
 
 Below is an example of how one would get a new refreshed session ID and pass it to Ada. Please note that the backend is expected to take care of the session ID expiry. This code snippet was used for a web-based JavaScript application and may look different according to the application type and coding languages, however, the concepts remain the same.
 
+```javascript
+setInterval (() => {
+    //get a new session ID (takes non-zero time)
+adaEmbed.setMetaFields({ session_id: "NEW_SESSION_ID" });
 
+//pass the refresehed session ID to Ada
+}, TIMEOUT_INTERVAL);
+```
+The process of passing a Session ID is identical to the `setMetaFields(metaFields)` instructions above. Once processed, use the credentials for an HTTP Request as seen in the example below.
 
+## Using the Session ID to unlock APIs
+
+<img width="700" alt="API Block Example 2" src="httprequest2.png">
+
+Once this HTTP Request block is set up (as seen above) and is triggered in an Answer Flow, this session ID is passed to the API. Thus allowing the API to authenticate the user, and continue to execute the request.
