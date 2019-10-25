@@ -72,6 +72,8 @@ adaEmbed.setMetaFields({ session_id: "NEW_SESSION_ID" });
 
 //pass the refresehed session ID to Ada
 }, TIMEOUT_INTERVAL);
+
+//repeat every TIMEOUT_INTERVAL (in seconds)
 ```
 The process of passing a Session ID is identical to the `setMetaFields(metaFields)` instructions above. Once processed, use the credentials for an HTTP Request as seen in the example below.
 
