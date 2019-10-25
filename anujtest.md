@@ -48,7 +48,7 @@ adaEmbed.setMetaFields({
 
 Once this HTTP Request block is set up (as seen above) and is triggered in an Answer Flow, this authentication token is passed to the API. It is assumed that the token authenticates the calls to the API.
 
-### It is important to note: the token verification should happen in the backend on every call.
+### It is important to note that token verification should be happening in the backend, on every call.
 
 Thus, allowing the API to authenticate the user, and continue to execute the request.
 
@@ -67,7 +67,7 @@ As you proceed through the steps below you will be working to create a purple me
 
 For security purposes, we recommend setting an expiration on the session ID that will force the session ID to be regenerated every X minutes. Learn more about best standards with OAuth 2.0 Access Token Lifetimes: [here.](https://www.oauth.com/oauth2-servers/access-tokens/access-token-lifetime/)
 
-Below is an example of how one would get a new refreshed session ID and pass it to Ada. Please note that the backend is expected to take care of the session ID expiry. This code snippet was used for a web-based JavaScript application and may look different according to the application type and coding languages, however, the concepts remain the same.
+Below is an example of how one would get a new refreshed session ID and pass it to Ada. 
 
 ```javascript
 setInterval (() => {
@@ -79,6 +79,10 @@ adaEmbed.setMetaFields({ session_id: "NEW_SESSION_ID" });
 
 //repeat every TIMEOUT_INTERVAL (in seconds)
 ```
+#### Please note that the backend is expected to take care of the session ID expiry. 
+
+This code snippet was used for a web-based JavaScript application and may look different according to the application type and coding languages, however, the concepts remain the same.
+
 The process of passing a Session ID is identical to the `setMetaFields(metaFields)` instructions above. Once processed, use the credentials for an HTTP Request as seen in the example below.
 
 ## Using the Session ID to unlock APIs
