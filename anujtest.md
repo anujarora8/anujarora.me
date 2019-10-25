@@ -46,7 +46,11 @@ adaEmbed.setMetaFields({
 
 <img width="700" alt="API Block Example" src="httprequest1.png">
 
-Once this HTTP Request block is set up (as seen above) and is triggered in an Answer Flow, this authentication token is passed to the API. It is assumed that the token authenticates the calls to the API, **therefore, the token verification should happen in the backend on every call,**  thus allowing the API to authenticate the user, and continue to execute the request.
+Once this HTTP Request block is set up (as seen above) and is triggered in an Answer Flow, this authentication token is passed to the API. It is assumed that the token authenticates the calls to the API.
+
+###It is important to note: the token verification should happen in the backend on every call.
+
+Thus, allowing the API to authenticate the user, and continue to execute the request.
 
 **Note:** this Authentication Token *does not* need to be the same token that is used to authenticate users on your site. If your team wishes, they may generate new credentials exclusively for Ada - which can possess limited information.
 
