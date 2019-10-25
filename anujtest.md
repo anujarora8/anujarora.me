@@ -8,11 +8,11 @@
 
 There are two different methods for achieving this. 
 
-1. [Method 1 - Unique User Authentication Token Generation](#Method-1)
+[1. Method 1 - Unique User Authentication Token Generation](#Method-1)
 
 Generating unique user authentication tokens, is recommended if you have this capability. If this functionality is not available for you, then we have provided an alternate option.
 
-2. [Method 2 - Setting a Session ID with Expiration Timer](#Method-2)
+[2. Method 2 - Setting a Session ID with Expiration Timer](#Method-2)
 
 Setting session IDs with an expiration timer. Instructions for establishing both of these methods are available below.
 
