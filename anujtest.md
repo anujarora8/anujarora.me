@@ -24,5 +24,30 @@ Furthermore, the instructions below are written for pre-authentication on the we
 
 In this section, we explain how to create a unique authentication token for each user, and pass this token to us. As you proceed through the steps below you will be working to create a purple metavariable, similar to the one seen here:*
 
-<img width="180" alt="User Auth Token" src="userauthtoken.png">
+<img width="150" alt="User Auth Token" src="userauthtoken.png">
+
+Detailed instructions on how to Set MetaFields in Ada are included in the [Ada Embed] (#ada-embed) documentation. 
+
+*See the relevant snippet below.*
+
+#### `setMetaFields(metaFields)` `@param {Object}`
+Used to update `metaFields` after Chat has been opened. In most situations, the [metaFields](#metafields-type-object) settings object should be enough for user attribution. However, in cases where Ada Chat remains open while page changes occur (like in Single Page Applications), this methods may be useful.
+
+**Example:**
+```javascript
+adaEmbed.setMetaFields({
+  phone_number: "(123) 456-7890",
+  name: "Ada Lovelace"
+});
+```
+**Note:** Please keep in mind the following: 1) Because unsanitized meta variable names are sanitized by Ada's backend, meta variable names should not include whitespace, emojis, special characters or periods; 2) Some default meta variables are already set for you.
+
+## Using the Authentication Token to unlock APIs
+
+<img width="150" alt="API Block Example" src="httprequest1.png">
+
+Once this HTTP Request block is set up (as seen above) and is triggered in an Answer Flow, this authentication token is passed to the API. It is assumed that the token authenticates the calls to the API, **therefore, the token verification should happen in the backend on every call,**  thus allowing the API to authenticate the user, and continue to execute the request.
+
+**Note:** this Authentication Token *does not* need to be the same token that is used to authenticate users on your site. If your team wishes, they may generate new credentials exclusively for Ada - which can possess limited information.
+
 
