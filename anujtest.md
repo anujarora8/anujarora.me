@@ -50,4 +50,20 @@ Once this HTTP Request block is set up (as seen above) and is triggered in an An
 
 **Note:** this Authentication Token *does not* need to be the same token that is used to authenticate users on your site. If your team wishes, they may generate new credentials exclusively for Ada - which can possess limited information.
 
+## Method 2
+### Passing an Expiring Session ID to Ada
+
+*Please note: This method assumes that it is not possible to create a unique authentication token for each user. 
+
+Furthermore, the instructions below are written for pre-authentication on the web. The process may look slightly different for mobile or desktop applications, however, the concepts and outcomes remain the same.*
+
+As you proceed through the steps below you will be working to create a purple metavariable, similar to the one seen here:
+
+<img width="150" alt="Session ID" src="sessionid.png">
+
+For security purposes, we recommend setting an expiration on the session ID that will force the session ID to be regenerated every X minutes. Learn more about best standards with OAuth 2.0 Access Token Lifetimes: [here.] (https://www.oauth.com/oauth2-servers/access-tokens/access-token-lifetime/)
+
+Below is an example of how one would get a new refreshed session ID and pass it to Ada. Please note that the backend is expected to take care of the session ID expiry. This code snippet was used for a web-based JavaScript application and may look different according to the application type and coding languages, however, the concepts remain the same.
+
+
 
