@@ -48,7 +48,7 @@ adaEmbed.setMetaFields({
 
 Once this HTTP Request block is set up (as seen above) and is triggered in an Answer Flow, this authentication token is passed to the API. It is assumed that the token authenticates the calls to the API.
 
-### It is important to note that token verification should be happening in the backend, on every call.
+#### It is important to note that token verification should happen in the backend, on every call.
 
 Thus, allowing the API to authenticate the user, and continue to execute the request.
 
@@ -57,9 +57,9 @@ Thus, allowing the API to authenticate the user, and continue to execute the req
 ## Method 2
 ### Passing an Expiring Session ID to Ada
 
-*Please note: This method assumes that it is not possible to create a unique authentication token for each user. 
+*This method assumes that it is not possible to create a unique authentication token for each user.*
 
-Furthermore, the instructions below are written for pre-authentication on the web. The process may look slightly different for mobile or desktop applications, however, the concepts and outcomes remain the same.*
+*Furthermore, the instructions below are written for pre-authentication on the web. The process may look slightly different for mobile or desktop applications, however, the concepts and outcomes remain the same.*
 
 As you proceed through the steps below you will be working to create a purple metavariable, similar to the one seen here:
 
