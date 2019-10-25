@@ -24,5 +24,5 @@ Furthermore, the instructions below are written for pre-authentication on the we
 
 In this section, we explain how to create a unique authentication token for each user, and pass this token to us. As you proceed through the steps below you will be working to create a purple metavariable, similar to the one seen here:*
 
-<img width="600" alt="User Auth Token" src="userauthtoken.png">
+<img width="80" alt="User Auth Token" src="userauthtoken.png">
 
