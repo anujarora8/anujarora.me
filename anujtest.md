@@ -61,7 +61,7 @@ As you proceed through the steps below you will be working to create a purple me
 
 <img width="150" alt="Session ID" src="sessionid.png">
 
-For security purposes, we recommend setting an expiration on the session ID that will force the session ID to be regenerated every X minutes. Learn more about best standards with OAuth 2.0 Access Token Lifetimes: [here.] (https://www.oauth.com/oauth2-servers/access-tokens/access-token-lifetime/)
+For security purposes, we recommend setting an expiration on the session ID that will force the session ID to be regenerated every X minutes. Learn more about best standards with OAuth 2.0 Access Token Lifetimes: [here.](https://www.oauth.com/oauth2-servers/access-tokens/access-token-lifetime/)
 
 Below is an example of how one would get a new refreshed session ID and pass it to Ada. Please note that the backend is expected to take care of the session ID expiry. This code snippet was used for a web-based JavaScript application and may look different according to the application type and coding languages, however, the concepts remain the same.
 
